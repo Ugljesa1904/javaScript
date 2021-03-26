@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="author" content="Ugljesa Todorovic">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program za obavljanje osnovnih aritmetickih operacija</title>
+</head>
+
+<body>
+
+    <script>
+        let number1 = prompt("Please enter number 1:");
+        let operation = prompt("Please enter one of suggested operators: *, /, -, +.")
+        let number2 = prompt("Please enter number 2:");
+
+
+
+        function sabiranje(a, b) {
+            var m = parseInt(a) + parseInt(b);
+            return m;
+        }
+
+        function oduzimanje(a, b) {
+            var g = parseInt(a) - parseInt(b);
+            return g
+        }
+
+        function deljenje(a, b) {
+            var d = parseInt(a) / parseInt(b);
+            return d;
+        }
+
+        function mnozenje(a, b) {
+            var u = parseInt(a) * parseInt(b);
+            return u;
+        }
+
+        if (operation == "*") {
+            alert(mnozenje(number1, number2));
+        } else if (operation == "/") {
+            alert(deljenje(number1, number2));
+        } else if (operation == "+") {
+            alert(sabiranje(number1, number2));
+        } else if (operation == "-") {
+            alert(oduzimanje(number1, number2));
+        } else {
+            alert("You've entered an invalid operator");
+        }
+
+
+    </script>
+
+</body>
+
+</html>
